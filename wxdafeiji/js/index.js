@@ -5,7 +5,7 @@
  */
 ;(function ($) {
     $(function () {
-        var imageUrl = "http://sandbox.runjs.cn/uploads/rs/30/7mnuxrh7/";
+        var imageUrl = "img/";
         var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|mobile)/);
 
         //获取画布对象
@@ -59,7 +59,13 @@
 
         //页面开始执行方法
         (function () {
-            var images = ['bg.jpg', 'loading1.png', 'loading2.png', 'loading3.png', 'logo.png'];
+            var images = [
+                'bg.jpg', //背景图片
+                'loading1.png', 
+                'loading2.png', 
+                'loading3.png', 
+                'logo.png'
+            ];
             loadImages(images, loading);
         })();
 
